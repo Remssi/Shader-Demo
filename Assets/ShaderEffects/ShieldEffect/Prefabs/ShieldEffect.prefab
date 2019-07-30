@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1265721245343344}
+  m_IsPrefabParent: 1
+--- !u!1 &1265721245343344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4674950192617800}
+  - component: {fileID: 114122946309241834}
+  - component: {fileID: 114708326569069812}
+  m_Layer: 0
+  m_Name: ShieldEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1638215223184536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4222910611476000}
+  - component: {fileID: 114793609326710468}
+  m_Layer: 0
+  m_Name: ParticleController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4222910611476000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1638215223184536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4674950192617800}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4674950192617800
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265721245343344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4222910611476000}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114122946309241834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265721245343344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2c12bbf81bb114d8dc546f77f9d10d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldMaterial: {fileID: 2100000, guid: 55e7d593d4098344ebbb2ebb178e6448, type: 2}
+  shieldColor: {r: 0.6901961, g: 0.791652, b: 0.9803922, a: 1}
+  distortionMagnitude: 0.25
+  distortionSpeed: 0.64
+  rimPower: 1.75
+  rimMagnitude: 1
+  rimColor: {r: 0.3450981, g: 0.5716277, b: 0.7254902, a: 1}
+  shieldSize: 0.15
+  distortionLineEnable: 0
+  lineDistortionMagnitude: 2
+  lineDistortionSpeed: 4
+  variationEnable: 0
+  variationSpeed: 1
+  variationMinimum: 0.2
+  variationMaximum: 0.5
+  particleGO: {fileID: 1166552993737734, guid: c151386dc7eb5894eae53d7e354994f5, type: 2}
+  particleCount: 3
+  xAxis: 4
+  zAxis: 2
+  particlesOffset: {x: 0, y: 0, z: 0}
+  particleScale: 0.5
+  particleLineLength: 100
+  particleLineWidth: 0.16
+  orbitDuration: 6
+--- !u!114 &114708326569069812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265721245343344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baaf13df86182324390daeeb09cc6e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114793609326710468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1638215223184536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97e390427f7bc3439fab89e644fff51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
