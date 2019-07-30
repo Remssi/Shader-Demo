@@ -1,5 +1,5 @@
 # Shader-Demo
-A few shader and graphic effects I created last summer, including force field, invisibility and camera distraction effect.
+A few shader and graphic effects I created last summer, including force field, invisibility and camera distraction effect. The effects are highly customizable, for example you can determine force field's color, distortion magnitude and speed, size, rim lighting power and color, you can enable separate distortion lines to pass through the force field, enable size variation over time within min and max values, amount of surrounding particles, rotation distance, offset their origin, change size of particles, particles' trail line length and width as well as their orbit duration.
 
 # Link to a video of the effects
 https://www.dropbox.com/s/urh0gh03zlw2g18/ShaderShowCase.mp4?dl=0
