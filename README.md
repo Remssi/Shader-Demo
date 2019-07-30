@@ -1,6 +1,9 @@
 # Shader-Demo
 A few shader and graphic effects I created last summer, including force field, invisibility and camera distraction effect.
 
+# Link to a video of the effects
+https://www.dropbox.com/s/urh0gh03zlw2g18/ShaderShowCase.mp4?dl=0
+
 # To use the effects:
 
 # Noise effect
